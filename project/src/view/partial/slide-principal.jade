@@ -1,0 +1,27 @@
+.flexslider
+  script(type='text/javascript').
+    $(document).ready(function() {
+      $('.flexslider').flexslider({
+        animation: 'slide',
+        slideDirection: 'horizontal',
+        controlsContainer: '.flex-container'
+      });
+    });
+
+  div.flex-container
+    div.flexslider
+      ul.slides
+        li
+          img(src='img/demo/slides/2.jpg', alt='slide')
+          p.flex-caption Deslize os dedos para passas os slides!
+
+        li
+          img(src='img/demo/slides/3.jpg', alt='slide')
+          p.flex-caption Se encontrar algum erro me avise :)
+        li
+          img(src='img/demo/slides/1.jpg', alt='slide')
+        li
+          img(src='img/demo/slides/4.jpg' ,alt='slide')
+
+  div.shadow1box
+    img.shadow1(src='img/shadow1.png', alt='shadow')

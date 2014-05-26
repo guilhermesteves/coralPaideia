@@ -1,0 +1,32 @@
+div.ui-footer.ui-bar-a.ui-footer-fixed.slideup(data-role='footer', data-position='fixed')
+  //p.center-text.copyright-text Copyright 2014. Paideia, Guilherme Esteves
+
+  div.custom-icons.ui-navbar.ui-footer-fixed.slideup(data-role='navbar', data-grid='a',  data-position='fixed')
+    ul.ui-grid-a(ng-show='!isSubmenu')
+      li.ui-block-a
+        a#home2.ui-btn.ui-btn-inline.ui-btn-icon-top.ui-btn-up-b(ui-sref='main', data-icon='custom', data-theme='a', data-corners='false', data-shadow='false', data-iconshadow='true', data-iconpos='top', data-inline='true')
+          span.ui-btn-inner
+            span.btn-text Início
+            span.ui-icon.ui-icon-custom.ui-icon-shadow &nbsp;
+      li.ui-block-b
+        a#v-card.ui-btn.ui-btn-inline.ui-btn-icon-top.ui-btn-up-b(href='#', ng-click='menuAutor()', data-icon='custom', data-theme='a', data-corners='false', data-shadow='false', data-iconshadow='true', data-iconpos='top', data-inline='true')
+          span.ui-btn-inner
+            span.btn-text Autor
+            span.ui-icon.ui-icon-custom.ui-icon-shadow &nbsp;
+
+    ul.ui-grid-b(ng-show='isSubmenu')
+      li.ui-block-a
+        a#eye.nav-item.about-nav.ui-btn.ui-btn-inline.ui-btn-icon-top.ui-btn-up-b(ui-sref='author', data-icon='custom', data-theme='a', data-corners='false', data-shadow='false', data-iconshadow='true', data-iconpos='top', data-inline='true')
+          span.ui-btn-inner
+            span.btn-text Quem eu sou
+            span.ui-icon.ui-icon-custom.ui-icon-shadow &nbsp;
+      li.ui-block-b
+        a#facebook.nav-item.face-nav.ui-btn.ui-btn-inline.ui-btn-icon-top.ui-btn-up-b(href='#', target='_blank' data-icon='custom', data-theme='a', data-corners='false', data-shadow='false', data-iconshadow='true', data-iconpos='top', data-inline='true')
+          span.ui-btn-inner
+            span.btn-text Facebook
+            span.ui-icon.ui-icon-custom.ui-icon-shadow &nbsp;
+      li.ui-block-c
+        a#home.nav-item.twitter-nav.ui-btn.ui-btn-inline.ui-btn-icon-top.ui-btn-up-b(href='#', ng-click='menuPrincipal()', data-icon='custom', data-theme='a', data-corners='false', data-shadow='false', data-iconshadow='true', data-iconpos='top', data-inline='true')
+          span.ui-btn-inner
+            span.btn-text Voltar Menu
+            span.ui-icon.ui-icon-custom.ui-icon-shadow &nbsp;
