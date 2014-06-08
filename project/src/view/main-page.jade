@@ -10,16 +10,13 @@
   div.ui-content(data-role='content')
 
     //form.ui-listview-filter.ui-bar-b.ui-listview-filter-inset
-    div.ui-input-search.ui-shadow-inset.ui-btn-corner-all.ui-btn-shadow.ui-icon-searchfield.ui-body-b
-      input#search.ui-input-text.ui-body-b(placeholder='Pesquise aqui a música...', ng-model='pesquisa', type='search')
+    div.ui-input-search.ui-btn-corner-all.ui-btn-shadow.ui-icon-searchfield
+        input#search.ui-input-text.ui-body-b(placeholder='Pesquise aqui a música/letra...', ng-model='pesquisa', type='search')
 
-    br
-
-    ol.ui-listview.ui-listview-inset.ui-corner-all.ui-shadow
-      li.ui-btn.ui-btn-icon-right.ui-li-has-arrow.ui-li.ui-btn-up-c(ng-repeat='m in musicas | filter: pesquisa', ng-class="{'ui-corner-bottom':$last}", data-corners='false', data-shadow='false', data-iconshadow='true', data-icon='arrow-r', data-iconpos='right', data-theme='c')
+    ul.ui-listview.ui-listview-inset.ui-corner-all.ui-shadow
+      li.ui-btn.ui-btn-icon-right.ui-li-has-arrow.ui-li.ui-btn-up-c(ng-repeat='m in getMusics() | filter: pesquisa', ng-class="{'ui-corner-bottom':$last,'ui-corner-top':$first}", data-corners='false', data-shadow='false', data-iconshadow='true', data-icon='arrow-r', data-iconpos='right', data-theme='c')
         div.ui-btn-inner.ui-li
-          a.ui-link-inherit(ui-sref='musica({ music: m.slug })') {{ m.nome }}
-          span.ui-icon.ui-icon-arrow-r.ui-icon-shadow &nbsp;
+          a.ui-link-inherit(ui-sref='music({ slug: m.slug })') {{ m.nome }}
 
 
 

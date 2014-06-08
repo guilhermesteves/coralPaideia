@@ -29,7 +29,7 @@ module.config(["$locationProvider","$stateProvider", "$urlRouterProvider",functi
           }
     })
     .state('music', {
-          url: "/musica/:musica",
+          url: "/musica/:slug",
           views: {
              "content": { template: "<music-page/>" }
           }

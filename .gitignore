@@ -2,3 +2,9 @@ release
 debug
 node_modules
 temp
+_old
+._coralPaideia.sublime-workspace
+._coralPaideia.sublime-project
+coralPaideia.sublime-workspace
+coralPaideia.sublime-project
+._*

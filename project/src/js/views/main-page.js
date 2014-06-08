@@ -3,8 +3,9 @@
         restrict: 'E',
         templateUrl: 'view/main-page.html',
         replace: true,
-        controller : ["$scope", function($scope){
-          
+        controller : ["$scope", "musicService",  function($scope, musicService){
+
+          $scope.getMusics = musicService.getMusics;
         }]
       };
  });

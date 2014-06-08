@@ -3,8 +3,9 @@ module.directive('slide-principal', function() {
         restrict: 'E',
         templateUrl: 'view/partial/slide-principal.html',
         replace: true,
-        controller : ["server", "$scope", function(server, $scope){
+        controller : ["server", "$scope", "slideService", function(server, $scope, slideService){
 
+          $scope.getSlides = slideService.getSlides;
         }]
       };
  });

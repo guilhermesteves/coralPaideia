@@ -9,14 +9,6 @@
 * Customized by Mike Ilsley - BeantownDesign.com
 *
 */
-/*
-@import url(http://fonts.googleapis.com/css?family=Kaushan+Script); /* font-family: 'Kaushan Script', cursive; /
-@import url(http://fonts.googleapis.com/css?family=Lobster); /* font-family: 'Lobster', cursive; /
-@import url(http://fonts.googleapis.com/css?family=Cabin:400,700); /* font-family: 'Cabin', sans-serif; font-weight: 400; /
-@import url(http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911); /* font-family: 'Goudy Bookletter 1911', serif; /
-@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,700italic,600); /* font-family: 'Crimson Text', serif; /
-@import url(http://fonts.googleapis.com/css?family=Cardo:400,700); /* font-family: 'Cardo', serif; /
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700italic,700); /* font-family: 'Droid Serif', serif; */
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700); /* font-family: 'Droid Sans', sans-serif; */
 
 
@@ -141,7 +133,7 @@ a.ui-link-inherit {
 .ui-icon-searchfield:after {
   background:             #666 /*{global-icon-color}*/;
   background:             #eee /*{global-icon-disc}*/;
-  background-image: url(http://code.jquery.com/mobile/1.1.0/img/icons-18-black.png) /*{global-icon-set}*/;
+  background-image: url(http://code.jquery.com/mobile/1.1.0/images/icons-18-black.png) /*{global-icon-set}*/;
   background-repeat: no-repeat;
   -moz-border-radius:         9px;
   -webkit-border-radius:        9px;
@@ -155,7 +147,7 @@ a.ui-link-inherit {
 .ui-icon-alt {
   background:             #fff;
   background:             rgba(255,255,255,.3);
-  background-image: url(http://code.jquery.com/mobile/1.1.0/img/icons-18-black.png);
+  background-image: url(http://code.jquery.com/mobile/1.1.0/images/icons-18-black.png);
   background-repeat: no-repeat;
 }
 
@@ -170,14 +162,14 @@ a.ui-link-inherit {
   .ui-icon-gear, .ui-icon-refresh, .ui-icon-forward, .ui-icon-back,
   .ui-icon-grid, .ui-icon-star, .ui-icon-alert, .ui-icon-info, .ui-icon-home, .ui-icon-search, .ui-icon-searchfield:after,
   .ui-icon-checkbox-off, .ui-icon-checkbox-on, .ui-icon-radio-off, .ui-icon-radio-on {
-    background-image: url(http://code.jquery.com/mobile/1.1.0/img/icons-36-black.png);
+    background-image: url(http://code.jquery.com/mobile/1.1.0/images/icons-36-black.png);
     -moz-background-size: 776px 18px;
     -o-background-size: 776px 18px;
     -webkit-background-size: 776px 18px;
     background-size: 776px 18px;
   }
   .ui-icon-alt {
-    background-image: url(http://code.jquery.com/mobile/1.1.0/img/icons-36-black.png);
+    background-image: url(http://code.jquery.com/mobile/1.1.0/images/icons-36-black.png);
   }
 }
 /* plus minus */
@@ -1393,8 +1385,7 @@ h3.home-title {
   /* font-family: 'Lobster', cursive; font-size:28px; */
   /* font-family: 'Cabin', sans-serif; font-weight: 700; font-size:22px; */
   /* font-family: 'Cardo', serif; font-size:24px; */
-  /* font-family: 'Droid Sans', sans-serif; font-size:22px; font-weight:700  */
-   font-family: 'Droid Sans', sans-serif; font-size:28px;
+  font-family: 'Droid Sans', sans-serif; font-size:22px; font-weight:700
 }
 
 .padd {
@@ -1495,11 +1486,11 @@ hr.ornamental { background:url(../img/ornamental.png) center no-repeat; backgrou
   /* background:url(../img/page-backgrounds/zebra.jpg) 0 0; background-size: 121px 38px; */
   /* background:url(../img/page-backgrounds/paper.jpg) 0 0; background-size: 500px 593px;  */
   /* background:url(../img/page-backgrounds/farmer.jpg) 0 0; background-size: 349px 349px; */
-  /* background:url(../img/page-backgrounds/blue-stripes.jpg) 0 0; background-size: 100px 100px; */
-  /* background:url(../img/page-backgrounds/texture.jpg) 0 0; background-size: 476px 476px; */
+   /* background:url(../img/page-backgrounds/blue-stripes.jpg) 0 0; background-size: 100px 100px; */
+   background:url(../img/page-backgrounds/texture.jpg) 0 0; background-size: 476px 476px;
   /* background:url(../img/page-backgrounds/white-brick-wall.jpg) 0 0; background-size: 25px 17px; */
   /* background:url(../img/page-backgrounds/grilled.jpg) 0 0; background-size: 170px 180px;  */
-  background:url(../img/page-backgrounds/wood.jpg) 0 0; background-size: 203px 317px;
+  /* background:url(../img/page-backgrounds/wood.jpg) 0 0; background-size: 203px 317px; */
   color: #111;
   text-shadow: 0 1px 0 #fff;
 }
@@ -1512,10 +1503,10 @@ hr.ornamental { background:url(../img/ornamental.png) center no-repeat; backgrou
 
   /* font-family: Helvetica, Arial, sans-serif; */
   /* font-family: 'Cabin', sans-serif; */
-   font-family: 'Droid Sans', sans-serif;
+  /* font-family: 'Goudy Bookletter 1911', serif; */
   /* font-family: 'Crimson Text', serif; */
    /* font-family: 'Cardo', serif; */
-   /*  font-family: 'Droid Sans', sans-serif; */
+    font-family: 'Droid Sans', sans-serif;
 }
 
 
@@ -1524,24 +1515,24 @@ hr.ornamental { background:url(../img/ornamental.png) center no-repeat; backgrou
    ========================================================================== */
 
 .ui-body-c .ui-link-inherit {
-  color: #3366CC
+  color:  #3a7591;
 }
 
 .ui-body-c .ui-link {
-  color:  #3366CC;
+  color:  #3a7591;
   font-weight: bold;
 }
 
 .ui-body-c .ui-link:hover {
-  color:  #3366CC;
+  color:  #3a7591;
 }
 
 .ui-body-c .ui-link:active {
-  color:  #3366CC;
+  color:  #3a7591;
 }
 
 .ui-body-c .ui-link:visited {
-    color:  #3366CC;
+    color:  #3a7591;
 }
 
 
@@ -1551,7 +1542,7 @@ hr.ornamental { background:url(../img/ornamental.png) center no-repeat; backgrou
 
 .ui-btn-up-c {
   border: 1px solid #111;
-  background: #342F2A;
+  background: #0A202B;
   font-weight: bold;
   color: #fff;
   text-shadow:  0 1px 1px #111;
@@ -1563,9 +1554,9 @@ hr.ornamental { background:url(../img/ornamental.png) center no-repeat; backgrou
 
 .ui-btn-hover-c {
   border: 1px solid #000;
-  background: #3A352F;
+  background: #0C2430;
   font-weight: bold;
-  color: #fff;
+  color: #E75909;
   text-shadow:  0 1px 1px #000;
 }
 
@@ -1575,9 +1566,9 @@ hr.ornamental { background:url(../img/ornamental.png) center no-repeat; backgrou
 
 .ui-btn-down-c {
   border: 1px solid  #000;
-  background: #25211c;
+  background: #071a23;
   font-weight: bold;
-  color:  #fff;
+  color:  #E75909;
   text-shadow:  0 1px 1px #000;
 }
 
@@ -1588,13 +1579,12 @@ hr.ornamental { background:url(../img/ornamental.png) center no-repeat; backgrou
 .ui-btn-up-c,
 .ui-btn-hover-c,
 .ui-btn-down-c {
-  font-family: Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
 
 .ui-btn-inner {
     border-color: rgba(255, 255, 255, 0.3);
-    border-top: 1px solid #413e3a;
+    border-top: 1px solid #1a3d4f;
 }
 
 
@@ -1602,9 +1592,9 @@ hr.ornamental { background:url(../img/ornamental.png) center no-repeat; backgrou
 
 .ui-btn-active {
   border: 1px solid #111;
-  background: #25211c;
+  background: #071a23;
   font-weight: bold;
-  color:  #fff;
+  color:#E75909;
   cursor: pointer;
   text-shadow:  0 1px 1px #000;
   text-decoration: none;
@@ -1615,14 +1605,13 @@ hr.ornamental { background:url(../img/ornamental.png) center no-repeat; backgrou
 }
 
 
-
 /* =============================================================================
    Interior Banner Styles
    ========================================================================== */
 
 .bannerContainer {
   width:100%;
-  background:#111;
+  /*background:#111;*/
 }
 
 .banner {
@@ -1639,14 +1628,14 @@ hr.ornamental { background:url(../img/ornamental.png) center no-repeat; backgrou
 
 h2.pageTitle {
   text-transform:uppercase;
-  background:url(../img/pattern.png) #342F2A; background-size: 5px 5px;
+  background:url(../img/pattern.png) #0A202B; background-size: 5px 5px;
   border-bottom:1px solid #aaa;
-  color:#fff;
+  color:#E75909;
   width:100%;
   margin:0;
   padding:0;
-  font-family: 'Droid Sans', sans-serif;
-  text-shadow: 0 1px 0 #000;
+  font-family: 'Droid Sans', cursive;
+  text-shadow: 0 1px 0 #fff;
   font-weight:normal;
 }
 
@@ -1664,15 +1653,15 @@ h2.pageTitle span {
   border:0px;
   border-bottom:1px solid #bfc0c0;
   color:#eee;
-  height:60px;
+  height:40px;
   text-shadow: 0 -1px 1px #000;
   background:url(../img/pattern.png) #111; background-size: 5px 5px;
 }
 
 .logo {
   width:231px;
-  height:50px;
-  background:url(../img/logo.png) bottom center no-repeat;
+  height:40px;
+  background:url(../img/logo.png) top center no-repeat;
   margin:0 auto;
   background-size: 185px 40px;
 }
@@ -1683,31 +1672,28 @@ h1.ui-title {
 }
 
 
-
 /* =============================================================================
    Link Bars with Large Arrows
    ========================================================================== */
 
-li .ui-btn-text {background:url(../img/pattern2.png) #342F2A; background-size: 20px 20px;}
+li .ui-btn-text {background:url(../img/pattern2.png) #0A202B; background-size: 20px 20px;}
 
 a.ui-link-inherit {
   background:url(../img/arrow.png) right no-repeat;
   background-size: 25px 30px;
 
-  /* font-family: 'Kaushan Script', cursive; font-size:18px; */
+  font-family: 'Droid Sans', cursive; font-size:18px;
   /* font-family: 'Lobster', cursive; font-size:18px; */
   /* font-family: 'Cabin', sans-serif; font-weight: 700; font-size:18px; */
   /* font-family: 'Droid Serif', serif; font-weight:700; font-style:italic; font-size:17px; */
-   font-family: 'Droid Sans', sans-serif; font-weight:700;  font-size:17px;
 
   color:#eee !important;
   text-shadow: 0 -1px 1px #000;
-  text-decoration:none
 }
 
 a.ui-link-inherit:hover {
-  background:url(../img/arrow.png) right no-repeat #3A352F;
-  color:#fff !important;
+  background:url(../img/arrow.png) right no-repeat #0C2430;
+  color:#E75909 !important;
 }
 
 .events-list span.ui-icon, .thumbnail-list span.ui-icon {display:none}
@@ -1723,7 +1709,7 @@ a.ui-link-inherit:hover {
 }
 
 .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
-    padding: .9em 15px;
+    padding: .8em 15px;
 }
 
 .ui-content {
@@ -1742,7 +1728,6 @@ a.ui-link-inherit:hover {
 }
 
 .ui-btn-icon-notext .ui-btn-inner { z-index:9999 }
-
 
 /* =============================================================================
    List Styles
@@ -1837,7 +1822,7 @@ li.ui-li-divider {
   border: 1px solid #333;
   background:url(../img/pattern.png) #111; background-size: 5px 5px;
   font-weight: bold;
-  color:  #fff;
+  color:  #E75909;
   text-shadow: 0 -1px 1px #000;
 }
 
@@ -1847,11 +1832,10 @@ li.ui-li-divider {
 
 .ui-btn-hover-b {
   border: 1px solid #000;
-  background: #342F2A;
+  background: #0C2430;
   font-weight: bold;
   color:  #fff;
   text-shadow: 0  -1px 1px  #014D68;
-
 }
 
 .ui-btn-hover-b a.ui-link-inherit {
@@ -1860,7 +1844,7 @@ li.ui-li-divider {
 
 .ui-btn-down-b {
   border: 1px solid #333;
-  background: #25211c;
+  background: #071a23;
   font-weight: bold;
   color:  #fff;
   text-shadow: 0 -1px 1px #225377;
@@ -2153,9 +2137,20 @@ html[xmlns] .slides {display: block;}
   font-size: 14px;
   line-height: 18px;
 
-   /* font-family: 'Kaushan Script', cursive; font-size:18px; */
+   font-family: 'Droid Sans', cursive; font-size:18px;
   /* font-family: 'Lobster', cursive; font-size:17px; */
   /* font-family: 'Cardo', serif; font-size:16px; */
-    font-family: 'Droid Sans', sans-serif; font-size:16px;
-  /*  font-family: 'Droid Serif', serif; font-weight:400; font-size:16px; */
+  /* font-family: 'Droid Sans', sans-serif; font-size:16px */
+}
+.copyright-text {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Droid Sans', cursive; font-size:10px;
+}
+.copyright {
+  width:100%;
+  background:#FFFFFF;
+}
+.text-center {
+  text-align: center;
 }
