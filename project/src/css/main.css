@@ -30,7 +30,12 @@ a.ui-link-inherit {
   text-decoration: none !important;
 }
 
-
+a.footer-link {
+  /*font-weight: bold;*/
+  color: #E75909;
+  text-shadow: 0 -1px 1px #000;
+  text-decoration: none !important;
+}
 
 /* corner rounding classes
 -----------------------------------------------------------------------------------------------------------*/
@@ -1661,7 +1666,7 @@ h2.pageTitle span {
 .logo {
   width:231px;
   height:40px;
-  background:url(../img/logo.png) top center no-repeat;
+  /*background:url(../img/logo.png) top center no-repeat;*/
   margin:0 auto;
   background-size: 185px 40px;
 }
@@ -2149,7 +2154,12 @@ html[xmlns] .slides {display: block;}
 }
 .copyright {
   width:100%;
-  background:#FFFFFF;
+  /*background:#FFFFFF;*/
+  background: url(../img/pattern.png) #111;
+  color:#FFFFFF;
+  padding: 3px 0px;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid #1a3d4f;
 }
 .text-center {
   text-align: center;

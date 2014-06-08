@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         dest: "debug/css/style_<%= pkg.version %>.css"
       }
     },  */
-    
+
     jade: {
       compile: {
         options: {
@@ -139,7 +139,7 @@ module.exports = function(grunt) {
         ]
       }
     },
-    
+
     clean: ["debug/", "release/","temp/"],
 
     watch: {
@@ -160,7 +160,7 @@ module.exports = function(grunt) {
                 logConcurrentOutput: true
             }
         }
-     
+
     },
 
     replace: {
@@ -188,7 +188,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-cssmin'); 
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-concat-css');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-concurrent');
