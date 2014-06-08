@@ -1,32 +1,78 @@
+- var title = 'Coral Paideia';
+- var description = 'Aplicativo para o Coral Paidéia, que engloba todas as músicas';
+- var url = 'http://coral.guilhermeesteves.com';
+- var cp = 'Coral Paidéia (coral.guilhermeesteves.com)';
+- var googleVerification = '';
+
+- var facebookImage = './img/logo.png';
+- var facebookImageWidth = '600';
+- var facebookImageHeight = '120';
+
+- var twitter = '@guilhermesteves';
+- var twitterImage = facebookImage;
+
+- var googlePlusImage = facebookImage;
 doctype html
 html(ng-app='coralPaideia')
   head
-    // Metatags essenciais
+
+    //- ************************** Tags Padrão ************************** //
     meta(charset='utf-8')
-    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
     meta(http-equiv='Cache-control', content='public')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
     meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+    title #{title}
 
-    // Metatags SEO
+    //- ************************** Tags SEO ************************** //
+    meta(name='robots' content='index, follow')
+    meta(name='language' content='pt-br')
+    meta(name='description' content='#{description}')
     meta(name='keywords', content='Paidéia, coral, músicas')
-    meta(name='description', content='Aplicativo para o Coral Paidéia, que engloba todas as músicas')
+    meta(name='classification' content='Teatro Paidéia Santo Amaro, Teatro Paidéia, Teatro')
+    meta(name='distribution' content='Global')
+    meta(name='rating' content='General')
+    meta(name='google-site-verification' content='#{googleVerification}')
+    meta(name='robots' content='index, follow')
+    meta(name='revisit-after' content='7 days')
+    meta(name='creator' content='#{cp}')
+    meta(name='publisher' content='#{cp}')
 
-    // TODO: colocar metatags sociais
+    //- ************************** Tags Open Graph ************************** //
+    meta(property='og:locale' content='pt_BR')
+    meta(property='og:url' content='#{url}')
+    meta(property='og:title' content='#{title}')
+    meta(property='og:site_name' content='#{title}')
+    meta(property='og:description' content='#{description}')
+    meta(property='og:image' content='#{facebookImage}')
+    meta(property='og:image:type' content='image/jpeg')
+    meta(property='og:image:width' content='#{facebookImageWidth}')
+    meta(property='og:image:height' content='#{facebookImageHeight}')
+    meta(property='og:type' content='website')
 
-    // Imagens
+    //- ************************** Tags Twitter ************************** //
+    meta(name='twitter:card' content='summary')
+    meta(name='twitter:site' content='#{twitter}')
+    meta(name='twitter:title' content='#{title}')
+    meta(name='twitter:description' content='#{description}')
+    meta(name='twitter:creator' content='#{twitter}')
+    meta(name='twitter:image' content='#{twitterImage}')
+
+    //- Imagens
     link(type='image/x-icon', rel='shortcut icon', href='img/favicon.ico')
     link(type='image/x-icon', rel='icon', href='img/favicon.ico')
-    link(rel='apple-touch-icon', sizes='114x114', href='images/splash/splash-icon.png')
-    link(rel='apple-touch-startup-image', href='images/splash/splash-screen.png', media='screen and (max-device-width: 320px)')
-    link(rel='apple-touch-startup-image', href='images/splash/splash-screen@2x.png', media='(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)')
-    link(rel='apple-touch-startup-image', href='images/splash/splash-screen@3x.png', sizes='640x1096')
+    //- LEMBRAR DE COLOCAR IMAGENS APPLE
+      link(rel='apple-touch-icon', sizes='114x114', href='images/splash/splash-icon.png')
+      link(rel='apple-touch-startup-image', href='images/splash/splash-screen.png', media='screen and (max-device-width: 320px)')
+      link(rel='apple-touch-startup-image', href='images/splash/splash-screen@2x.png', media='(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)')
+      link(rel='apple-touch-startup-image', href='images/splash/splash-screen@3x.png', sizes='640x1096')
 
-    // CSSs
+    //- CSSs
     link(rel='stylesheet', media='screen', href='./lib/css/lib_@@version.css')
     link(rel='stylesheet', media='screen', href='./css/style_@@version.css')
 
-    title Coral Paideia
 
   body
     div(data-role='page')
