@@ -1,0 +1,28 @@
+.musica
+
+  fieldset(class='ui-grid-a')
+    div(class='ui-block-a')
+      a.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-up-c(href='', scroll-to='letra', data-role='button', data-corners='true', data-shadow='true', data-iconshadow='true', data-wrapperels='span', data-theme='c')
+        span.ui-btn-inner.ui-btn-corner-all
+          span.ui-btn-text Ver Letra
+    div(class='ui-block-b')
+      a.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-up-c(href='', scroll-to='video', data-role='button', data-corners='true', data-shadow='true', data-iconshadow='true', data-wrapperels='span', data-theme='c')
+        span.ui-btn-inner.ui-btn-corner-all
+          span.ui-btn-text Ver Video
+
+  h1 {{ model.nome }}
+  h3 por
+    strong  {{ model.autor }}
+
+  p#letra
+    strong Essa música contem {{ (model.estrofes == 1 ? '1 estrofe' : model.estrofes + ' estrofes') }}
+
+  p(ng-repeat='estrofe in model.letra', ng-bind-html='getHtmlContent(estrofe)') {{ estrofe }}
+
+  br
+
+  h3#video Vídeo
+
+  div(class='video-container')
+    iframe(ng-src='{{ youtube }}', frameborder='0', width='560', height='315')
+
