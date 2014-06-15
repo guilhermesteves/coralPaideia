@@ -63,7 +63,7 @@ module.factory('musicService',['$rootScope','server', function (rootScope, serve
                     'slug': 'acalanto',
                     'nome': 'Acalanto',
                     'autor': 'Roberto Carlos',
-                    'video': 'vpXbysPh_XI',
+                    'video': '-cf0veYpIiY',
                     'estrofes': 3,
                     'letra': {
                       '1': 'É tão tarde, a manhã já vem<br> Todos dormem, a noite também<br> Só eu velo por você, meu bem<br> Dorme anjo, o boi pega neném<br> Lá no céu deixam de cantar<br> Os anjinhos foram se deitar<br> Mamãezinha precisa descansar<br> Dorme anjo, papai vai lhe ninar<br><br>',

@@ -1,6 +1,6 @@
 {
   "name": "coralPaideia",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "devDependencies": {
     "express": "3.4.8",
     "grunt": "0.4.2",
